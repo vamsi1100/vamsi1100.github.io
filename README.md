@@ -20,12 +20,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-To create a production build:
+To create a production build (static export to `out/`):
 
 ```bash
 npm run build
-npm start
 ```
+
+The site deploys automatically to [vamsi1100.github.io](https://vamsi1100.github.io) via GitHub Actions on every push to `main`.
 
 ## Project structure
 
