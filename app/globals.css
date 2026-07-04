@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 248 250 252;
+  --surface: 255 255 255;
+  --edge: 226 232 240;
+  --ink: 15 23 42;
+  --muted: 71 85 105;
+  --accent: 5 150 105;
+  --accent-2: 8 145 178;
+}
+
+.dark {
+  --bg: 7 11 18;
+  --surface: 12 18 28;
+  --edge: 30 41 59;
+  --ink: 226 232 240;
+  --muted: 148 163 184;
+  --accent: 52 211 153;
+  --accent-2: 34 211 238;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-ink antialiased;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.25);
+}
+
+/* Chart-grid backdrop */
+.bg-grid {
+  background-image: linear-gradient(rgb(var(--edge) / 0.55) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--edge) / 0.55) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 35%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 35%, transparent 100%);
+}
+
+/* Scroll-reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
