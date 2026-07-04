@@ -1,5 +1,5 @@
 // Production domain — drives canonical URLs, Open Graph tags, robots.txt, and sitemap.xml.
-export const siteUrl = "https://vamsi1100.github.io";
+export const siteUrl = "https://vamsiseemaku.github.io";
 
 export const site = {
   name: "Vamsi Seemakurthi",

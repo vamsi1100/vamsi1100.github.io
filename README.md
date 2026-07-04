@@ -26,7 +26,7 @@ To create a production build (static export to `out/`):
 npm run build
 ```
 
-The site deploys automatically to [vamsi1100.github.io](https://vamsi1100.github.io) via GitHub Actions on every push to `main`.
+The site deploys automatically to [vamsiseemaku.github.io](https://vamsiseemaku.github.io) via GitHub Actions on every push to `main`.
 
 ## Project structure
 
