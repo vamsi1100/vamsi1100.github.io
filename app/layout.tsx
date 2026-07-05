@@ -81,6 +81,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "1iGqJxmV7ZfsUlu6HUKyOn-4-nfur3ghg3NW8j704uo",
+  },
 };
 
 const themeInit = `(function(){try{if(localStorage.getItem("theme")==="light"){document.documentElement.classList.remove("dark")}}catch(e){}})();`;
